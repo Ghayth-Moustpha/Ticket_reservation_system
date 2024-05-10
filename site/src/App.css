@@ -1,0 +1,70 @@
+
+
+
+
+.active{
+  color:  white ;
+	background-color: rgb(8 47 73);;;
+ 
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+button:hover {
+  background-color: #3182ce; /* تغيير لون الخلفية عند التحويل */
+  color: white; /* تغيير لون النص عند التحويل */
+}
+
+/* في حال كان التصميم في نفس ملف BusBookingPage.js */
+.bg-custom-background {
+  background-image: url('/public/images/bus2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(70%) contrast(120%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-image {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.image1 {
+  animation-name: float;
+}
+
+.image2 {
+  animation-name: rotate;
+}
